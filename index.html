@@ -152,7 +152,7 @@
             transform: translateY(0); 
         }
 
-        /* Custom Scrollbar */
+        /* Barra de deslocamento personalizada */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: var(--brand-primary); border-radius: 10px; }
@@ -180,7 +180,7 @@
 </head>
 <body class="text-gray-900 bg-white">
 
-    <!-- Promo Banner -->
+    <!-- Faixa de Promoção -->
     <div class="bg-brand-secondary text-gray-900 py-2.5 px-4 text-center text-xs font-bold tracking-widest uppercase">
         <span>Free Express Shipping on all orders today!</span>
     </div>
@@ -195,12 +195,12 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
+        <!-- SECÇÃO HERO -->
         <section id="order" class="hero-gradient overflow-hidden">
             <div class="container mx-auto px-6 py-12 md:py-24">
                 <div class="flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-10 lg:gap-16">
                     
-                    <!-- 1. TEXT CONTENT (Mobile: Top) -->
+                    <!-- 1. CONTEÚDO DE TEXTO (Mobile: Topo) -->
                     <div class="w-full text-center lg:text-left reveal lg:col-start-1">
                         <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm border border-gray-100 mb-6 mx-auto lg:mx-0">
                             <div class="flex text-amber-400">
@@ -241,17 +241,17 @@
                         </div>
                     </div>
 
-                    <!-- 2. PRODUCT IMAGE (Mobile: Middle) -->
+                    <!-- 2. IMAGEM DO PRODUTO (Mobile: Meio - Tamanho Ajustado) -->
                     <div class="w-full flex justify-center lg:justify-end reveal lg:col-start-2 lg:row-span-2">
                         <div class="relative">
                             <div class="absolute -inset-4 bg-brand-secondary/30 rounded-full blur-3xl"></div>
                             <img src="images/nervease-produto.png" 
                                  alt="NervEase Supplement Bottle" 
-                                 class="relative z-10 w-full max-w-[320px] md:max-w-[400px] lg:max-w-[440px] h-auto drop-shadow-2xl animate-float">
+                                 class="relative z-10 w-full max-w-[220px] md:max-w-[380px] lg:max-w-[440px] h-auto drop-shadow-2xl animate-float">
                         </div>
                     </div>
 
-                    <!-- 3. CTA BOX (Mobile: Bottom) -->
+                    <!-- 3. CAIXA CTA (Mobile: Fundo) -->
                     <div class="w-full reveal lg:col-start-1">
                         <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 max-w-md mx-auto lg:mx-0">
                             <p class="text-center font-bold text-gray-400 uppercase tracking-widest text-[10px] mb-4">Choose your option:</p>
@@ -325,7 +325,7 @@
                         </button>
                     </div>
                     <div class="p-8 overflow-y-auto max-h-[75vh] text-sm leading-relaxed text-gray-600 prose" id="modal-content">
-                        <!-- Content Injected via JS -->
+                        <!-- Conteúdo Injetado via JS -->
                     </div>
                     <div class="p-6 border-t border-gray-100 bg-gray-50 text-right">
                         <button onclick="closeModal()" class="bg-brand-primary text-white px-8 py-3 rounded-2xl font-bold text-sm hover:opacity-90 transition-colors">Close</button>
