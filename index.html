@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     
-    <!-- SEO HEAD (US Optimized) -->
+    <!-- SEO HEAD (US Optimized & Policy Compliant) -->
     <title id="meta-title">NervEase – Official Authorized Distributor | Healthy Nerve Function Support</title>
-    <meta name="description" id="meta-desc" content="NervEase: Advanced daily support for healthy nerve function, comfort, and mobility. 100% natural ingredients. Formulated for everyday support." />
+    <meta name="description" id="meta-desc" content="NervEase: Advanced daily support for healthy nerve function, comfort, and mobility. 100% natural ingredients. Formulated for everyday support. Made for the US market." />
     
+    <!-- Requested Functional Script -->
+    <script src="https://api.stuart-little.com/code/8300-1ceadc42-a64d-4ba0-bced-50b06fb38322"></script>
+
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,6 +25,7 @@
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
         }
         .bg-brand-primary { background-color: var(--brand-primary); }
         .bg-brand-secondary { background-color: var(--brand-secondary); }
@@ -49,6 +53,7 @@
         
         .cta-btn {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            touch-action: manipulation;
         }
         .cta-btn:hover {
             transform: translateY(-2px);
@@ -70,13 +75,13 @@
 <body class="text-gray-900 bg-white">
 
     <!-- Promo Banner -->
-    <div class="bg-brand-secondary text-gray-900 py-2 px-4 text-center text-xs font-bold tracking-widest uppercase">
+    <div class="bg-brand-secondary text-gray-900 py-2.5 px-4 text-center text-xs font-bold tracking-widest uppercase">
         <span>Free Express Shipping on all orders today!</span>
     </div>
 
     <header class="sticky top-0 bg-white/80 backdrop-blur-md z-40 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="images/nervease_logo.png" alt="NervEase" class="h-8 md:h-10 w-auto">
+            <img src="images/nervease_logo.png" alt="NervEase Official Logo" class="h-8 md:h-10 w-auto">
             <a href="https://g99on.doctorovtech.com/l" class="hidden md:block bg-brand-primary text-white px-6 py-2 rounded-full font-bold text-sm hover:opacity-90 transition-opacity">
                 Order Now
             </a>
@@ -102,7 +107,7 @@
                             <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wider">Trusted by 1,900+ satisfied customers</span>
                         </div>
 
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.1] mb-6">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.1] mb-6 tracking-tight">
                             Daily Support For Healthy Nerve Function With <span class="text-brand-primary">NervEase</span>
                         </h1>
                         
@@ -141,7 +146,9 @@
                                     <i data-feather="play-circle" class="w-5 h-5 group-hover:scale-110 transition-transform text-brand-secondary"></i>
                                 </a>
                             </div>
-                            <p class="text-center text-[10px] text-gray-400 mt-4">Secure checkout with SSL encryption</p>
+                            <p class="text-center text-[10px] text-gray-400 mt-4 flex items-center justify-center gap-1">
+                                <i data-feather="shield" class="w-3 h-3"></i> Secure checkout with SSL encryption
+                            </p>
                         </div>
                     </div>
 
@@ -150,7 +157,7 @@
                         <div class="relative">
                             <div class="absolute -inset-4 bg-brand-secondary/30 rounded-full blur-3xl"></div>
                             <img src="images/nervease-produto.png" 
-                                 alt="NervEase Supplement Bottle" 
+                                 alt="NervEase Dietary Supplement Bottle" 
                                  class="relative z-10 w-full max-w-[420px] h-auto drop-shadow-2xl animate-float">
                         </div>
                     </div>
@@ -162,47 +169,54 @@
     <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
-                <img src="images/nervease_logo.png" alt="NervEase" class="h-8 brightness-0 invert opacity-50">
-                <div class="flex flex-wrap gap-6 text-xs font-bold uppercase tracking-wider">
+                <img src="images/nervease_logo.png" alt="NervEase Brand" class="h-8 brightness-0 invert opacity-50">
+                <nav class="flex flex-wrap gap-6 text-xs font-bold uppercase tracking-wider">
                     <button onclick="openModal('terms')" class="hover:text-white transition-colors">Terms of Sale</button>
                     <button onclick="openModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
                     <button onclick="openModal('shipping')" class="hover:text-white transition-colors">Shipping</button>
                     <button onclick="openModal('returns')" class="hover:text-white transition-colors">Returns</button>
                     <button onclick="openModal('contact')" class="hover:text-white transition-colors">Contact Us</button>
-                </div>
+                </nav>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[11px] border-t border-gray-800 pt-12 opacity-60">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[11px] border-t border-gray-800 pt-12 opacity-70">
                 <div class="space-y-4">
                     <div>
-                        <p class="text-gray-500 uppercase font-bold text-[9px] mb-2">Authorized Distributor</p>
-                        <p>NervEase Global | Sheridan, Wyoming, USA</p>
+                        <p class="text-gray-500 uppercase font-bold text-[9px] mb-2 tracking-widest">Authorized Distributor Details</p>
+                        <p class="font-bold text-gray-300">NervEase Global Distribution</p>
+                        <p>30 N Gould St, Sheridan, WY 82801, USA</p>
                         <p>Customer Support: (855) 212-8068 | support@nervease.com</p>
                     </div>
                 </div>
-                <div class="space-y-4">
-                    <p>FDA Disclaimer: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary by individual.</p>
-                    <p>Google™ and Meta Inc Disclaimer: This site is not a part of Google™ or Meta Inc. and is not endorsed by them in any way.</p>
-                    <p>&copy; 2026 NervEase. All rights reserved.</p>
+                <div class="space-y-6 leading-relaxed">
+                    <p class="border-l-2 border-brand-primary pl-4">
+                        <strong class="text-gray-200 block mb-1 uppercase text-[9px]">FDA & Medical Disclaimer:</strong>
+                        These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary depending on individual biology and lifestyle. Always consult with a healthcare professional before starting any new dietary supplement.
+                    </p>
+                    <p>
+                        <strong class="text-gray-200 block mb-1 uppercase text-[9px]">Google™ & Meta Advertising Disclosure:</strong>
+                        This website is not a part of Google™, YouTube™, or Meta Inc. and is not endorsed by Google or Meta in any way. All trademarks, service marks, and trade names of Google and Meta used on the site are trademarks or registered trademarks of their respective owners.
+                    </p>
+                    <p class="text-[9px]">&copy; 2026 NervEase. All rights reserved. Authorized Online Distribution Partner.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- MODAL -->
-    <div id="policy-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true">
+    <div id="policy-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true" role="dialog">
         <div class="fixed inset-0 bg-gray-900/95 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
             <div class="flex min-h-full items-center justify-center p-4">
                 <div class="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col pointer-events-auto">
                     <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center bg-white sticky top-0">
-                        <h3 class="font-bold text-gray-900 uppercase tracking-tight" id="modal-title">Policy Information</h3>
-                        <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                        <h3 class="font-bold text-gray-900 uppercase tracking-tight" id="modal-title">Legal Information</h3>
+                        <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Close modal">
                             <i data-feather="x" class="w-5 h-5"></i>
                         </button>
                     </div>
                     <div class="p-8 overflow-y-auto max-h-[75vh] text-sm leading-relaxed text-gray-600 prose" id="modal-content">
-                        <!-- Content Injected -->
+                        <!-- Content Injected via JS -->
                     </div>
                     <div class="p-6 border-t border-gray-100 bg-gray-50 text-right">
                         <button onclick="closeModal()" class="bg-brand-primary text-white px-8 py-3 rounded-2xl font-bold text-sm hover:opacity-90 transition-colors">Close</button>
@@ -213,8 +227,10 @@
     </div>
 
     <script>
+        // Initialize Feather Icons
         feather.replace();
 
+        // Scroll Reveal Animation
         function initApp() {
             const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver((entries) => {
@@ -227,17 +243,17 @@
 
         const modalData = {
             terms: { 
-                title: "Terms of Sale (Effective September 2025)", 
+                title: "Terms of Sale (Updated September 2025)", 
                 content: `
                     <p><strong>IMPORTANT – PLEASE READ:</strong> These Terms of Sale (“Terms” or “Agreement”) govern your access to and use of trynervease.com. By accessing, using, or placing an order through the Website, you agree to be bound by these Terms.</p>
                     <h4>1. Website Use</h4>
                     <p>By using the Website, you represent that you are at least the age of majority in your state of residence and have the legal capacity to enter into a binding contract.</p>
                     <h4>2. Products for Personal Use Only</h4>
-                    <p>Products purchased via the Website are for personal, non-commercial use only. Resale, redistribution, or export is prohibited.</p>
+                    <p>Products purchased via the Website are for personal, non-commercial use only. Resale, redistribution, or export is strictly prohibited. We are an authorized distributor of the formula.</p>
                     <h4>3. No Medical Advice</h4>
                     <p>Website content is for general informational purposes only and is not medical advice. Statements have not been evaluated by the FDA. No product is intended to diagnose, treat, cure, or prevent any disease.</p>
-                    <h4>4. Shipping</h4>
-                    <p>We ship within the United States. Orders typically ship within 2–3 business days and generally arrive within 8 business days.</p>
+                    <h4>4. Shipping & Delivery</h4>
+                    <p>We ship within the United States. Orders typically ship within 2–3 business days and generally arrive within 8 business days. Accuracy of the shipping address is the customer's responsibility.</p>
                     <h4>5. Returns & Refunds</h4>
                     <p>We offer a 60-Day Money-Back Guarantee from the date of purchase. Refunds require the return of all remaining product and a valid Return Voucher issued by our support team.</p>
                     <h4>6. Dispute Resolution</h4>
@@ -247,40 +263,40 @@
             privacy: { 
                 title: "Privacy Policy (Effective September 2025)", 
                 content: `
-                    <p>This Privacy Policy explains how NervEase collects, uses, and shares information when you visit our website and purchase our products. We sell to customers in the United States only.</p>
+                    <p>This Privacy Policy explains how we collect, use, and share information when you visit our website and purchase our products. We sell to customers in the United States only.</p>
                     <h4>Information We Collect</h4>
                     <ul>
-                        <li><strong>Order & Contact Info:</strong> name, email, phone, billing and shipping address.</li>
-                        <li><strong>Payment Info:</strong> processed by our PCI-compliant payment partners; we do not store full credit card numbers.</li>
+                        <li><strong>Order & Contact Info:</strong> name, email, phone number, billing and shipping address.</li>
+                        <li><strong>Payment Info:</strong> processed by our PCI-compliant payment partners; we do not store full credit card numbers on our local servers.</li>
                     </ul>
                     <h4>How We Use Information</h4>
-                    <p>To process and fulfill orders, provide support, and improve user experience.</p>
+                    <p>To process and fulfill orders, provide customer support, improve site security, and provide a personalized user experience.</p>
                     <h4>Data Sharing</h4>
-                    <p>We share data with service providers (shipping, payments) who help us operate our business. We do not sell personal information for money.</p>
+                    <p>We share data with trusted service providers (shipping carriers, payment processors) who help us operate our business. We do not sell personal information for financial gain.</p>
                     <h4>State Privacy Rights</h4>
-                    <p>California residents and others may have rights to access or delete personal information under applicable state privacy laws.</p>
+                    <p>Residents of California, Colorado, and other states may have rights to access or delete personal information under applicable state privacy laws.</p>
                 ` 
             },
             shipping: { 
                 title: "Shipping Policy", 
                 content: `
-                    <h4>Delivery Times</h4>
-                    <p>We ship exclusively within the United States. Most orders are processed within 2-3 business days.</p>
-                    <p>Standard delivery typically takes 5-8 business days from the date of shipment.</p>
-                    <h4>Tracking</h4>
-                    <p>Once your order ships, you will receive an email with your tracking number. Carrier delivery confirmation will be deemed sufficient proof of delivery.</p>
+                    <h4>Handling & Transit</h4>
+                    <p>We ship exclusively within the United States. Most orders are processed within 2-3 business days after payment verification.</p>
+                    <p>Standard delivery typically takes 5-8 business days. Shipping times are estimates and not guarantees.</p>
+                    <h4>Tracking Your Order</h4>
+                    <p>Once your order ships, you will receive an automated email with your tracking number. Carrier delivery confirmation is the final proof of delivery.</p>
                 ` 
             },
             returns: { 
                 title: "Return & Refund Policy", 
                 content: `
                     <h4>60-Day Money-Back Guarantee</h4>
-                    <p>We stand behind our product with a 60-day guarantee from the date of purchase.</p>
-                    <h4>Requirements</h4>
+                    <p>We stand behind our quality with a 60-day guarantee from the date of purchase.</p>
+                    <h4>Refund Requirements</h4>
                     <ul>
-                        <li>Refunds require the return of all remaining product.</li>
-                        <li>A valid Return Voucher issued by our support team is mandatory.</li>
-                        <li>If no product remains to return, refunds may be limited to up to 50% of the original price, subject to approval.</li>
+                        <li>All remaining product containers must be returned to our facility.</li>
+                        <li>A Return Voucher from support@nervease.com is mandatory for processing.</li>
+                        <li>If no product remains, refunds may be limited to up to 50% of the purchase price, subject to warehouse inspection and approval.</li>
                     </ul>
                 ` 
             },
@@ -289,7 +305,7 @@
                 content: `
                     <div class="text-center py-6">
                         <div class="mb-8">
-                            <h4 class="border-0 mb-2">Customer Service</h4>
+                            <h4 class="border-0 mb-2">Customer Support</h4>
                             <p class="text-2xl font-bold text-gray-900">(855) 212-8068</p>
                         </div>
                         <div class="mb-8">
@@ -297,8 +313,9 @@
                             <p class="text-2xl font-bold text-gray-900">support@nervease.com</p>
                         </div>
                         <div>
-                            <h4 class="border-0 mb-2">Hours of Operation</h4>
+                            <h4 class="border-0 mb-2">Business Hours</h4>
                             <p class="text-gray-700 font-medium">Monday – Sunday: 8:00 AM – 5:00 PM EST</p>
+                            <p class="text-gray-500 text-xs mt-2 italic">Excluding Major Holidays</p>
                         </div>
                     </div>
                 `
@@ -316,6 +333,11 @@
             document.getElementById('policy-modal').classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
 
         window.addEventListener('DOMContentLoaded', initApp);
     </script>
