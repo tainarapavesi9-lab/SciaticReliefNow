@@ -11,7 +11,7 @@
     ======================== -->
     <title>NervEase | Natural Support for Healthy Nerve Function & Mobility</title>
     <meta name="description" content="NervEase is a natural formula designed to support healthy nerve function and promote daily mobility. Discover an advanced botanical blend for nerve support.">
-    <meta name="keywords" content="NervEase, nerve support, healthy nerve function, mobility support, natural formula">
+    <meta name="keywords" content="NervEase, nerve support, healthy nerve function, mobility support, natural formula, sciatic nerve support">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://sciaticreliefnow.vercel.app/">
     <meta http-equiv="content-language" content="en-US">
@@ -64,6 +64,7 @@
         :root {
             --brand-primary: #0A4A81;
             --brand-secondary: #B0D4F0;
+            --brand-dark: #111827;
         }
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
@@ -73,7 +74,6 @@
         .bg-brand-primary { background-color: var(--brand-primary); }
         .bg-brand-secondary { background-color: var(--brand-secondary); }
         .text-brand-primary { color: var(--brand-primary); }
-        .border-brand-primary { border-color: var(--brand-primary); }
         
         .hero-gradient {
             background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
@@ -89,10 +89,6 @@
             transform: translateY(0); 
         }
 
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: var(--brand-primary); border-radius: 10px; }
-        
         .cta-btn {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             touch-action: manipulation;
@@ -108,7 +104,7 @@
         }
         .animate-float { animation: float 4s ease-in-out infinite; }
 
-        .prose h4 { color: var(--brand-primary); font-weight: 800; margin-top: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+        .prose h4 { color: var(--brand-primary); font-weight: 800; margin-top: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
         .prose p { margin-bottom: 1rem; line-height: 1.6; color: #4b5563; }
         .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; color: #4b5563; }
     </style>
@@ -116,13 +112,13 @@
 <body class="text-gray-900 bg-white">
 
     <!-- Promo Banner -->
-    <div class="bg-brand-secondary text-gray-900 py-2.5 px-4 text-center text-xs font-bold tracking-widest uppercase">
-        <span>Free Express Shipping on all orders today!</span>
+    <div class="bg-brand-secondary text-gray-900 py-2 px-4 text-center text-[10px] font-bold tracking-[0.15em] uppercase">
+        FREE EXPRESS SHIPPING ON ALL ORDERS TODAY!
     </div>
 
     <header class="sticky top-0 bg-white/80 backdrop-blur-md z-40 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="images/nervease_logo.png" alt="NervEase Logo" class="h-8 md:h-10 w-auto">
+            <img src="images/nervease_logo.png" alt="NervEase Logo" class="h-7 md:h-10 w-auto">
             <a href="https://g99on.doctorovtech.com/l" class="hidden md:block bg-brand-primary text-white px-6 py-2 rounded-full font-bold text-sm hover:opacity-90 transition-opacity">
                 Order Now
             </a>
@@ -132,12 +128,12 @@
     <main>
         <!-- HERO SECTION -->
         <section id="order" class="hero-gradient overflow-hidden">
-            <div class="container mx-auto px-6 py-12 md:py-24">
+            <div class="container mx-auto px-6 py-10 md:py-20 lg:py-24">
                 <div class="flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-10 lg:gap-16">
                     
-                    <!-- 1. TEXT CONTENT (Mobile: Top) -->
+                    <!-- 1. TEXT CONTENT -->
                     <div class="w-full text-center lg:text-left reveal lg:col-start-1">
-                        <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm border border-gray-100 mb-6 mx-auto lg:mx-0">
+                        <div class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full shadow-sm border border-gray-100 mb-8 mx-auto lg:mx-0">
                             <div class="flex text-amber-400">
                                 <i data-feather="star" class="w-3 h-3 fill-current"></i>
                                 <i data-feather="star" class="w-3 h-3 fill-current"></i>
@@ -145,63 +141,65 @@
                                 <i data-feather="star" class="w-3 h-3 fill-current"></i>
                                 <i data-feather="star" class="w-3 h-3 fill-current"></i>
                             </div>
-                            <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wider">Trusted by 1,900+ satisfied customers</span>
+                            <span class="text-[9px] md:text-[10px] font-bold text-gray-500 uppercase tracking-wider">Trusted by 1,900+ satisfied customers</span>
                         </div>
 
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.1] mb-6 tracking-tight">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#111827] leading-[1.15] mb-6 tracking-tight">
                             Daily Support For Healthy Nerve Function With <span class="text-brand-primary">NervEase</span>
                         </h1>
                         
-                        <p class="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed mx-auto lg:mx-0">
+                        <p class="text-base md:text-lg text-gray-600 mb-8 max-w-xl leading-relaxed mx-auto lg:mx-0">
                             Discover a natural way to support nerve comfort and everyday mobility. Our advanced formula is designed to promote healthy nerve function and help you stay active.
                         </p>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 max-w-md mx-auto lg:mx-0">
+                        <!-- CHECKLIST -->
+                        <div class="flex flex-col items-center lg:items-start gap-4 mb-10 max-w-md mx-auto lg:mx-0">
                             <div class="flex items-center gap-3">
-                                <div class="bg-brand-secondary p-1 rounded-full"><i data-feather="check" class="w-4 h-4 text-brand-primary"></i></div>
-                                <span class="text-sm font-semibold">Natural nerve support</span>
+                                <div class="bg-brand-secondary w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0"><i data-feather="check" class="w-3.5 h-3.5 text-brand-primary"></i></div>
+                                <span class="text-sm font-bold text-gray-800">Natural nerve support</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="bg-brand-secondary p-1 rounded-full"><i data-feather="check" class="w-4 h-4 text-brand-primary"></i></div>
-                                <span class="text-sm font-semibold">100% natural ingredients</span>
+                                <div class="bg-brand-secondary w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0"><i data-feather="check" class="w-3.5 h-3.5 text-brand-primary"></i></div>
+                                <span class="text-sm font-bold text-gray-800">100% natural ingredients</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="bg-brand-secondary p-1 rounded-full"><i data-feather="check" class="w-4 h-4 text-brand-primary"></i></div>
-                                <span class="text-sm font-semibold">Supports daily comfort</span>
+                                <div class="bg-brand-secondary w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0"><i data-feather="check" class="w-3.5 h-3.5 text-brand-primary"></i></div>
+                                <span class="text-sm font-bold text-gray-800">Supports daily comfort</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="bg-brand-secondary p-1 rounded-full"><i data-feather="check" class="w-4 h-4 text-brand-primary"></i></div>
-                                <span class="text-sm font-semibold">Non-GMO formula</span>
+                                <div class="bg-brand-secondary w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0"><i data-feather="check" class="w-3.5 h-3.5 text-brand-primary"></i></div>
+                                <span class="text-sm font-bold text-gray-800">Non-GMO formula</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 2. PRODUCT IMAGE (Mobile: Middle - Adjusted Size) -->
+                    <!-- 2. PRODUCT IMAGE -->
                     <div class="w-full flex justify-center lg:justify-end reveal lg:col-start-2 lg:row-span-2">
                         <div class="relative">
-                            <div class="absolute -inset-4 bg-brand-secondary/30 rounded-full blur-3xl"></div>
+                            <!-- Background circle effect from reference image -->
+                            <div class="absolute inset-0 bg-brand-secondary/40 rounded-full scale-90 blur-3xl opacity-50"></div>
                             <img src="images/nervease-produto.png" 
                                  alt="NervEase Supplement Bottle" 
-                                 class="relative z-10 w-full max-w-[220px] md:max-w-[380px] lg:max-w-[440px] h-auto drop-shadow-2xl animate-float">
+                                 class="relative z-10 w-full max-w-[240px] md:max-w-[380px] lg:max-w-[440px] h-auto drop-shadow-2xl animate-float">
                         </div>
                     </div>
 
-                    <!-- 3. CTA BOX (Mobile: Bottom) -->
+                    <!-- 3. CTA BOX -->
                     <div class="w-full reveal lg:col-start-1">
-                        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 max-w-md mx-auto lg:mx-0">
-                            <p class="text-center font-bold text-gray-400 uppercase tracking-widest text-[10px] mb-4">Choose your option:</p>
+                        <div class="bg-white p-6 md:p-8 rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-gray-100 max-w-md mx-auto lg:mx-0">
+                            <p class="text-center font-bold text-gray-400 uppercase tracking-[0.15em] text-[9px] mb-5">Choose your option:</p>
                             <div class="space-y-4">
-                                <a href="https://g99on.doctorovtech.com/l" class="cta-btn flex items-center justify-between bg-brand-primary text-white px-6 py-4 rounded-2xl font-bold group">
+                                <a href="https://g99on.doctorovtech.com/l" class="cta-btn flex items-center justify-between bg-brand-primary text-white px-8 py-5 rounded-2xl font-extrabold group text-sm md:text-base">
                                     <span>Visit Official Product Page</span>
-                                    <i data-feather="shopping-cart" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                                    <i data-feather="shopping-cart" class="w-5 h-5 opacity-70 group-hover:scale-110 transition-transform"></i>
                                 </a>
-                                <a href="https://bjusf.doctordominion.com/l" class="cta-btn flex items-center justify-between bg-gray-900 text-white px-6 py-4 rounded-2xl font-bold group">
+                                <a href="https://bjusf.doctordominion.com/l" class="cta-btn flex items-center justify-between bg-gray-900 text-white px-8 py-5 rounded-2xl font-extrabold group text-sm md:text-base">
                                     <span>Watch The NervEase Video</span>
-                                    <i data-feather="play-circle" class="w-5 h-5 group-hover:scale-110 transition-transform text-brand-secondary"></i>
+                                    <i data-feather="play-circle" class="w-5 h-5 opacity-70 group-hover:scale-110 transition-transform text-brand-secondary"></i>
                                 </a>
                             </div>
-                            <p class="text-center text-[10px] text-gray-400 mt-4 flex items-center justify-center gap-1">
-                                <i data-feather="shield" class="w-3 h-3"></i> Secure checkout with SSL encryption
+                            <p class="text-center text-[10px] text-gray-400 mt-5 flex items-center justify-center gap-2">
+                                <i data-feather="lock" class="w-3 h-3"></i> Secure checkout with SSL encryption
                             </p>
                         </div>
                     </div>
@@ -210,11 +208,11 @@
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+    <footer class="bg-[#0b121e] text-gray-400 py-16">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
-                <img src="images/nervease_logo.png" alt="NervEase" class="h-8 brightness-0 invert opacity-50">
-                <nav class="flex flex-wrap gap-6 text-xs font-bold uppercase tracking-wider">
+                <img src="images/nervease_logo.png" alt="NervEase Logo" class="h-8 brightness-0 invert opacity-60">
+                <nav class="flex flex-wrap gap-6 text-[11px] font-bold uppercase tracking-widest">
                     <button onclick="openModal('terms')" class="hover:text-white transition-colors">Terms of Sale</button>
                     <button onclick="openModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
                     <button onclick="openModal('shipping')" class="hover:text-white transition-colors">Shipping</button>
@@ -223,25 +221,25 @@
                 </nav>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[11px] border-t border-gray-800 pt-12 opacity-70">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[10px] border-t border-gray-800 pt-12 opacity-80">
                 <div class="space-y-4">
                     <div>
-                        <p class="text-gray-500 uppercase font-bold text-[9px] mb-2 tracking-widest">Authorized Distributor Information</p>
-                        <p class="font-bold text-gray-300">NervEase Global Distribution Partner</p>
+                        <p class="text-gray-500 uppercase font-bold text-[8px] mb-2 tracking-widest">Authorized Distributor Information</p>
+                        <p class="font-bold text-gray-200">NervEase Global Distribution Partner</p>
                         <p>30 N Gould St, Sheridan, WY 82801, USA</p>
                         <p>Support: (855) 212-8068 | support@nervease.com</p>
                     </div>
                 </div>
                 <div class="space-y-6 leading-relaxed">
-                    <p class="border-l-2 border-brand-primary pl-4">
-                        <strong class="text-gray-200 block mb-1 uppercase text-[9px]">FDA Disclaimer:</strong>
-                        These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary depending on individual biology and lifestyle. Always consult a healthcare professional before starting any dietary supplement.
+                    <p class="border-l border-brand-primary pl-4">
+                        <strong class="text-gray-300 block mb-1 uppercase text-[8px]">FDA Disclaimer:</strong>
+                        These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary depending on individual biology and lifestyle.
                     </p>
                     <p>
-                        <strong class="text-gray-200 block mb-1 uppercase text-[9px]">Advertising Disclosure:</strong>
-                        This website is not a part of Google™, YouTube™, or Meta Inc. and is not endorsed by Google or Meta in any way. All trademarks, service marks, and trade names used on the site are property of their respective owners.
+                        <strong class="text-gray-300 block mb-1 uppercase text-[8px]">Advertising Disclosure:</strong>
+                        This website is not a part of Google™, YouTube™, or Meta Inc. and is not endorsed by Google or Meta in any way. Trademarks are property of their respective owners.
                     </p>
-                    <p class="text-[9px]">&copy; 2026 NervEase. All rights reserved. Authorized Distribution.</p>
+                    <p class="text-[9px] opacity-40">&copy; 2026 NervEase. All rights reserved. Authorized Distribution.</p>
                 </div>
             </div>
         </div>
@@ -249,7 +247,7 @@
 
     <!-- MODAL -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true" role="dialog">
-        <div class="fixed inset-0 bg-gray-900/95 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 bg-black/90 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
             <div class="flex min-h-full items-center justify-center p-4">
                 <div class="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col pointer-events-auto">
@@ -282,73 +280,11 @@
         }
 
         const modalData = {
-            terms: { 
-                title: "Terms of Sale (Effective September 2025)", 
-                content: `
-                    <p><strong>IMPORTANT – PLEASE READ:</strong> These Terms of Sale govern your access to and use of our distribution website. By placing an order, you agree to be bound by these Terms.</p>
-                    <h4>1. Website Use</h4>
-                    <p>You must be at least the age of majority in your state of residence to use this site and place an order.</p>
-                    <h4>2. Authorized Distribution</h4>
-                    <p>We are an authorized distributor of NervEase. Products are for personal use only; resale or export is strictly prohibited.</p>
-                    <h4>3. FDA Compliance</h4>
-                    <p>Statements on this site have not been evaluated by the FDA. Products are not intended to diagnose, treat, cure, or prevent any disease.</p>
-                    <h4>4. Returns & Guarantee</h4>
-                    <p>We offer a 60-Day Money-Back Guarantee. Valid Return Vouchers from our support team are required for all refund requests.</p>
-                    <h4>5. Shipping</h4>
-                    <p>Shipping is available to US addresses. Carriers' delivery confirmation is considered sufficient proof of delivery.</p>
-                ` 
-            },
-            privacy: { 
-                title: "Privacy Policy (Effective September 2025)", 
-                content: `
-                    <p>This policy explains how we collect and protect your data as an authorized distributor.</p>
-                    <h4>Information Collection</h4>
-                    <p>We collect order data (name, address, email) and non-sensitive technical data to fulfill purchases and improve site performance.</p>
-                    <h4>PCI Compliance</h4>
-                    <p>Your payment information is handled exclusively by PCI-compliant processors. We do not store full credit card numbers.</p>
-                    <h4>Data Sharing</h4>
-                    <p>We do not sell personal data. We only share info with logistical partners (shipping, billing) essential to fulfill your order.</p>
-                    <h4>California Privacy Rights</h4>
-                    <p>California residents may opt-out of the "sharing" of their personal information for targeted advertising.</p>
-                ` 
-            },
-            shipping: { 
-                title: "Shipping Policy", 
-                content: `
-                    <h4>Handling & Delivery</h4>
-                    <p>Orders are typically processed within 2-3 business days. Shipping times across the US average 5-8 business days.</p>
-                    <h4>Address Accuracy</h4>
-                    <p>Customers are responsible for providing correct shipping info. We are not liable for delays caused by incorrect addresses provided at checkout.</p>
-                ` 
-            },
-            returns: { 
-                title: "Return & Refund Policy", 
-                content: `
-                    <h4>60-Day Money-Back Guarantee</h4>
-                    <p>If you are not satisfied, contact us within 60 days of purchase for a return voucher.</p>
-                    <h4>Process</h4>
-                    <p>Refunds require the return of containers. If no product remains, partial refunds may apply subject to warehouse inspection and approval.</p>
-                ` 
-            },
-            contact: {
-                title: "Contact Information",
-                content: `
-                    <div class="text-center py-6">
-                        <div class="mb-8">
-                            <h4 class="border-0 mb-2">Customer Support</h4>
-                            <p class="text-2xl font-bold text-gray-900">(855) 212-8068</p>
-                        </div>
-                        <div class="mb-8">
-                            <h4 class="border-0 mb-2">Support Email</h4>
-                            <p class="text-2xl font-bold text-gray-900">support@nervease.com</p>
-                        </div>
-                        <div>
-                            <h4 class="border-0 mb-2">Business Hours</h4>
-                            <p class="text-gray-700 font-medium">Monday – Sunday: 8:00 AM – 5:00 PM EST</p>
-                        </div>
-                    </div>
-                `
-            }
+            terms: { title: "Terms of Sale", content: "<h4>1. Website Use</h4><p>You must be at least the age of majority in your state of residence to use this site. Products are for personal use only.</p><h4>2. Distribution</h4><p>We are an authorized distributor of NervEase capsules. Resale is prohibited.</p><h4>3. Disclaimer</h4><p>Statements have not been evaluated by the FDA. Products do not replace professional medical advice.</p>" },
+            privacy: { title: "Privacy Policy", content: "<h4>Data Collection</h4><p>We collect order information to fulfill your purchase. Payment is handled by PCI-compliant processors.</p><h4>Your Rights</h4><p>You may request data deletion or access at any time by contacting our support email.</p>" },
+            shipping: { title: "Shipping Policy", content: "<h4>Delivery</h4><p>Orders ship in 2-3 business days. US delivery typically takes 5-8 business days. You will receive a tracking number via email.</p>" },
+            returns: { title: "Returns Policy", content: "<h4>60-Day Guarantee</h4><p>Refunds require returning all containers. Contact support@nervease.com for a return voucher before shipping.</p>" },
+            contact: { title: "Contact Us", content: "<div class='text-center py-6'><p class='font-bold text-lg'>(855) 212-8068</p><p class='text-gray-500 mb-6'>support@nervease.com</p><p class='text-xs'>Monday – Sunday: 8:00 AM – 5:00 PM EST</p></div>" }
         };
 
         function openModal(type) {
